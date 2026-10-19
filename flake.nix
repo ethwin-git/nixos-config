@@ -20,7 +20,7 @@
       homeConfigurations."ethan" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ ./home.nix ];
+        modules = [ ./home-manager/home.nix ];
       };
 
        nixosConfigurations.Daisy = inputs.nixpkgs.lib.nixosSystem {
