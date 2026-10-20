@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
   imports = [
     ./zsh.nix
-    ./ohmyposh.nix
+    ./ohmyposh/ohmyposh.nix
     ./kitty.nix
   ];
 }
