@@ -14,7 +14,12 @@
     { nixpkgs, home-manager, ... } @ inputs:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
     in
     {
       homeConfigurations."ethan" = home-manager.lib.homeManagerConfiguration {
@@ -24,9 +29,10 @@
       };
 
        nixosConfigurations.Daisy = inputs.nixpkgs.lib.nixosSystem {
-         system = "x86_64-linux";
+         inherit system;
 
          modules = [
+           { nixpkgs.pkgs = pkgs; }
            ./configuration.nix
          ];
        };      
