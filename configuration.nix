@@ -48,6 +48,14 @@
      font-awesome
 ];
 
+ nix.gc = {
+   automatic = true;
+   dates = "weekly";
+   options = "--delete-older-than 30d";
+ };
+ nix.settings.auto-optimise-store = true;
+ 
+
  hardware.cpu.amd.updateMicrocode = true;
 
  hardware.graphics.enable = true;
