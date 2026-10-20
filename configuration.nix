@@ -43,6 +43,7 @@
   environment.systemPackages = with pkgs; [
     helix 
     kitty
+    sbctl
   ];
 
   fonts.packages = with pkgs; [
