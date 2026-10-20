@@ -6,9 +6,16 @@
       ./hardware-configuration.nix
     ];
 
-  boot.loader.limine.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/efi";
+  boot.loader = {
+    limine = {
+      enable = true;
+      secureBoot.enable = true;
+    };
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/efi";
+    };
+  };
 
   networking.hostName = "Daisy"; # Define your hostname.
 
