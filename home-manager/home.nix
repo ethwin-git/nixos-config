@@ -3,6 +3,7 @@
 {
   imports = [
     ./terminal
+    ./hypr
   ];
   
   home.username = "ethan";

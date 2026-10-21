@@ -17,6 +17,8 @@
     };
   };
 
+  services.displayManager.ly.enable = true;
+
   networking.hostName = "Daisy"; # Define your hostname.
 
   networking.networkmanager.enable = true;
@@ -37,7 +39,8 @@
       tree
     ];
   };
-
+ 
+  programs.hyprland.enable = true;
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
