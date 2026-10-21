@@ -2,6 +2,6 @@
   imports = [
     ./zsh.nix
     ./ohmyposh/ohmyposh.nix
-    ./kitty.nix
+    ./kitty/kitty.nix
   ];
 }
