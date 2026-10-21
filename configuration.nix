@@ -9,7 +9,7 @@
   boot.loader = {
     limine = {
       enable = true;
-      secureBoot.enable = true;
+      secureBoot.enable = false;
     };
     efi = {
       canTouchEfiVariables = true;
@@ -41,9 +41,11 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-    helix 
+    helix
+    vis 
     kitty
     sbctl
+    git
   ];
 
   fonts.packages = with pkgs; [

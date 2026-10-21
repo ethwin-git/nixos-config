@@ -22,18 +22,20 @@
       };
     in
     {
-      homeConfigurations."ethan" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-
-        modules = [ ./home-manager/home.nix ];
-      };
-
        nixosConfigurations.Daisy = inputs.nixpkgs.lib.nixosSystem {
          inherit system;
 
          modules = [
            { nixpkgs.pkgs = pkgs; }
            ./configuration.nix
+
+           home-manager.nixosModules.home-manager
+
+           {
+             home-manager.useGlobalPkgs = true;
+             home-manager.useUserPackages = true;
+             home-manager.users.ethan = import ./home-manager/home.nix;
+           }
          ];
        };      
     };
