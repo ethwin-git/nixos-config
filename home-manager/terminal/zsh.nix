@@ -6,7 +6,6 @@
     syntaxHighlighting.enable = true;
     shellAliases = {
       ls = "ls --color=auto";
-      hms = "home-manager switch --flake ~/nixos-config/#ethan";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config/#Daisy";
       
     };
