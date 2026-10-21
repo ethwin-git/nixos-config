@@ -41,7 +41,6 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-    helix
     vis 
     kitty
     sbctl
