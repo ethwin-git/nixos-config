@@ -4,6 +4,7 @@
   imports = [
     ./terminal
     ./hypr
+    ./ssh
   ];
   
   home.username = "ethan";
