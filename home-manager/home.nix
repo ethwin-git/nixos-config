@@ -10,6 +10,7 @@
     ./swaync
     ./bibata-cursors
     ./pwvucontrol
+    ./desktopBG
   ];
   
   home.username = "ethan";
