@@ -35,7 +35,7 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        class = "^(org.pulseaudio.pavucontrol)$",
+        class = "^(com.saivert.pwvucontrol)$",
     },
     float = true,
     size = "949 820",

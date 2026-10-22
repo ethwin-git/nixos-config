@@ -5,6 +5,11 @@
     ./terminal
     ./hypr
     ./ssh
+    ./waybar
+    ./cava
+    ./swaync
+    ./bibata-cursors
+    ./pwvucontrol
   ];
   
   home.username = "ethan";
