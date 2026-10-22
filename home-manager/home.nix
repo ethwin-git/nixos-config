@@ -6,7 +6,6 @@
     ./hypr
     ./ssh
     ./waybar
-    ./cava
     ./swaync
     ./bibata-cursors
     ./pwvucontrol
