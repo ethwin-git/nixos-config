@@ -1,6 +1,8 @@
 { config, pkgs, ... }: {
 
 imports = [
-./hyprland.nix
+./hyprland/hyprland.nix
+./hyprshot/hyprshot.nix
+./hyprpicker/hyprpicker.nix
  ];
 } 
