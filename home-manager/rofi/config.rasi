@@ -1,0 +1,133 @@
+configuration{
+    modi: "run,drun,window";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    run-display-format: " {name}";
+    disable-history: false;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 󰕰  Window";
+    display-Network: " 󰤨  Network";
+    click-to-exit: true;
+    global-kb: true;
+    me-accept-entry: "MousePrimary";
+    me-select-entry: "MouseDPrimary";
+    hover-select: true;
+}
+
+window{
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 800px;
+    height: 47%;
+    background-color: rgba(40, 40, 40, 0.99);
+    border-radius: 10px;
+    border: 2px;
+    border-color: rgba(215, 153, 33, 0.8);
+}
+
+mainbox{
+    enabled: true;
+    spacing: 0px;
+    background-color: transparent;
+    orientation: vertical;
+    children: [ "inputbar", "listbox"];
+}
+
+inputbar {
+    enabled: true;
+    spacing: 5px;
+    padding: 10px;
+    background-color: transparent;
+    text-color: rgb(68, 71, 90);
+    orientation: horizontal;
+    children: [ "prompt", "textbox-prompt-colon", "entry" ];
+}
+
+prompt {
+    font: "IosevkaNF";
+    background-color: rgb(40, 40, 40);
+    text-color: rgb(235, 219, 178);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px;
+    border-color: rgba(215, 153, 33, 0.8);
+}
+
+textbox-prompt-colon {
+    enabled: false;
+}
+
+entry {
+    enabled: true;
+    placeholder: "Search";
+    placeholder-color: rgb(235, 219, 178);
+    background-color: rgba(40, 40, 40, 1);
+    color: rgb(235, 219, 178);
+    cursor-color: rgba(235, 219, 178, 0.5);
+    padding: 10px;
+    border: 1px;
+    border-color: rgba(215, 153, 33, 0.8);
+    border-radius: 5px;
+}
+
+listbox {
+    spacing: 10px;
+    padding: 10px;
+    background-color: transparent;
+    orientation: vertical;
+    children: [ "message", "listview" ];
+}
+
+listview {
+    enabled: true;
+    padding: 5px;
+    scrollbar: false;
+    border: 5px;
+    border-color: rgba(215, 153, 33, 0.3);
+    border-radius: 10px;
+    children: [ "element" ];
+    cycle: true;
+    dynamic: true;
+}
+
+element {
+    background-color: rgba(28, 108, 137, 0.8);
+    spacing: 1px;
+    padding: 1px;
+    padding-left: 5px;
+    border-color: rgba(28, 108, 137, 0.3);
+}
+
+element.normal.normal {
+    background-color: transparent;
+    color: #A89984;
+}
+element.alternate.normal {
+    background-color: transparent;
+    color: #A89984;
+}
+
+element.selected.normal {
+    background-color: rgba(251, 145, 89, 0.3);
+    color: rgba(235, 219, 178);
+    border: 1px;
+    border-color: rgba(215, 153, 33, 0.8);
+    border-radius: 10px;
+}
+
+element-icon {
+    enabled: true;
+    size: 24px;
+    background-color: transparent;
+}
+
+element-text {
+    enabled: true;
+    padding: 10px;
+    font-weight: bold;
+    font: "IosevkaNF 13";
+    background-color: transparent;
+}
