@@ -30,7 +30,7 @@
 
   time.timeZone = "America/New_York";
 
-  hardware = {
+  services = {
 	pulseaudio.enable = false;
 };
   security.rtkit.enable = true;
