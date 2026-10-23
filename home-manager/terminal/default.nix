@@ -3,5 +3,6 @@
     ./zsh.nix
     ./ohmyposh/ohmyposh.nix
     ./kitty/kitty.nix
+    ./fastfetch/fastfetch.nix
   ];
 }

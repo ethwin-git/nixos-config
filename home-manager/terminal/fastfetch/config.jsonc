@@ -1,0 +1,207 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+  "type": "small",  //kitty or kitty-direct works if I don't have kitty terminal or kitty-icat installed
+  //"source": "",
+  //"width": 26,
+  "padding": {
+      "top": 4,
+      "left": 5
+    }
+  },
+  "general": {},
+  "display": {
+   "disableLinewrap": false,
+   "separator": ":",
+   "key": {
+    "width": 20,
+   },
+  "constants": [
+   // CONSTANT RIGHT PIPE BLUE {$1}
+  "                                              \u001b[38;2;69;133;136m│\u001b[49D\u001b[0m",
+   // CONSTANT RIGHT PIPE ORANGE {$2}
+  "                                              \u001b[38;2;215;153;33m│\u001b[54D\u001b[0m",
+   // CONSTANT RIGHT PIPE WHITE {$3}
+  "                                              \u001b[38;2;168;153;132m│\u001b[54D\u001b[0m",
+  ],
+  },
+  
+  "modules": [
+    //"title",    // uncomment title to display user@hostname
+
+{
+    "type": "custom",
+    "format": "╭────────────────────────────Software────────────────────────────╮",
+    "outputColor": "#458588"
+},
+ {
+    "type": "os",
+    "key": "│ OS",
+    "format": "{$1} {name} {arch}",
+    "keyColor": "#458588"
+  },
+{
+    "type": "kernel",
+    "key": "│ Kernel",
+    "format": "{$1} {sysname} {release}",
+    "keyColor": "#458588"
+  },
+ {
+    "type": "packages",
+    "key": "│ Packages",
+    "format": "{$1} {nix-user} (user)",
+    "keyColor": "#458588"
+  },
+ {
+    "type": "shell",
+    "key": "│ Shell",
+    "format": "{$1} {process-name} {version}",
+    "keyColor": "#458588"
+  },
+ {
+    "type": "de",
+    "key": "│ DE",
+    "keyColor": "#458588"
+  },
+   {
+    "type": "wm",
+    "key": "│ WM",
+    "format": "{$1} {process-name} {version} ({protocol-name})",
+    "keyColor": "#458588"
+  },
+   {
+    "type": "wmtheme",
+    "key": "│ WM Theme",
+    "keyColor": "#458588"
+  },
+   //{
+    //"type": "theme",
+    //"key": "│ Theme",
+    //"keyColor": "#458588"
+  //},
+   //{
+    //"type": "icons",
+    //"key": "│ Icons",
+    //"keyColor": "#458588"
+  //},
+   //{
+    //"type": "font",
+    //"key": "│ Font",
+    //"keyColor": "#458588"
+  //},
+   //{
+    //"type": "cursor",
+    //"key": "│ Cursor",
+    //"format": "{$1} {theme}",
+    //"keyColor": "#458588"
+  //},
+   {
+    "type": "terminal",
+    "key": "│ Terminal",
+    "format": "{$1} {process-name} {version}",
+    "keyColor": "#458588"
+  },
+   {
+    "type": "terminalfont",
+    "key": "│ Terminal Font",
+    "format": "{$1} {combined}",
+    "keyColor": "#458588"
+  },
+   //{
+    //"type": "locale",
+    //"key": "│ Locale",
+    //"format": "{$1} {result}",
+    //"keyColor": "#458588"
+  //},
+   {
+    "type": "custom",
+    "format": "╰────────────────────────────────────────────────────────────────╯",
+    "outputColor": "#458588"
+},
+"break",
+{
+    "type": "custom",
+    "format": "╭────────────────────────────Hardware────────────────────────────╮",
+    "outputColor": "#D79921"
+},
+{
+    "type": "cpu",
+    "key": "│ CPU",
+    "format": "{$2} {name} ({cores-logical}) @ {freq-max}",
+    "keyColor": "#D79921"
+  },
+  {
+    "type": "gpu",
+    "key": "│ GPU",
+    "format": "{$2} {vendor} {name} [{type}]",
+    "keyColor": "#D79921"
+  },
+   {
+    "type": "memory",
+    "key": "│ Memory",
+    "format": "{$2} {used} / {total} ({percentage})",
+    "keyColor": "#D79921"
+  },
+   {
+    "type": "swap",
+    "key": "│ Swap",
+    "format": "{$2} {used} / {total} ({percentage})",
+    "keyColor": "#D79921"
+  },
+    {
+    "type": "disk",
+    "key": "│ Disk",
+    "format": "{$2} {size-used} / {size-total} ({size-percentage}) - {filesystem}",
+    "keyColor": "#D79921"
+  },
+ {
+    "type": "display",
+    "key": "│ Display",
+    "format": "{$2} {width}x{height} @ {refresh-rate} Hz (as {scaled-width}x{scaled-height}) in {inch}\" [{type}]",
+    "keyColor": "#D79921"
+  },
+   {
+    "type": "custom",
+    "format": "╰────────────────────────────────────────────────────────────────╯",
+    "outputColor": "#D79921"
+},
+
+    "break",
+    
+     {
+            "type": "custom",
+            "format": "╭───────────────────────Age / Uptime / DT────────────────────────╮",
+            "outputColor": "white"
+        },
+        {
+            "type": "command",
+            "key": "│ OS Age",
+            "format": "{$3} {result}",                   
+            "keyColor": "white",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "│ Uptime",
+            "format": "{$3} {hours} hours, {minutes} mins",                   
+            "keyColor": "white"
+        },
+        {
+            "type": "datetime",
+            "key": "│ DateTime",
+            "format": "{$3} {year}-{month-pretty}-{day-in-month} {hour}:{minute-pretty}:{second-pretty}",
+            "keyColor": "white"
+        },
+        {
+            "type": "custom",
+            "format": "╰────────────────────────────────────────────────────────────────╯",
+            "outputColor": "white"
+            },
+   "break",
+      {
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "circle"
+        }
+  ]
+}
