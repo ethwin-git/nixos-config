@@ -1,5 +1,5 @@
 {
-  "pulseaudio": {
+  "wireplumber": {
     "format": "{icon} {volume}%",
     "format-bluetooth": "{volume}% {icon} ",
     "format-bluetooth-muted": "  {icon} ",
@@ -17,7 +17,7 @@
     "on-click-right": "pwvucontrol",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
-  "pulseaudio#mic": {
+  "wireplumber#mic": {
     "format": "{icon} {format_source}",
     "format-source": " {volume}%",
     "format-source-muted": "  0%",
@@ -26,12 +26,12 @@
     "on-scroll-down": "amixer set Capture 5%-",
     "on-click-right": "pwvucontrol",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
-    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ +5%",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ -5%"
+    "on-scroll-up": "wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SOURCE@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SOURCE@ 5%-"
   },
 
   "group/media": {
     "orientation": "horizontal",
-    "modules": ["pulseaudio", "pulseaudio#mic"]
+    "modules": ["wireplumber", "wireplumber#mic"]
   },
 }
