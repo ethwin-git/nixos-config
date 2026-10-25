@@ -5,12 +5,14 @@
     modules = [
       ../../configuration.nix
       inputs.home-manager.nixosModules.home-manager
-
-      self.nixosModules.features-git
-      self.nixosModules.user-ethan
-      self.nixosModules.hardware-nvidia
-      self.nixosModules.hardware-amd-cpu
-
+     ]
+      ++ (with self.nixosModules; [
+      features-git
+      user-ethan
+      hardware-nvidia
+      hardware-amd-cpu
+     ]) ++ [
+     
       {
         nixpkgs.config.allowUnfree = true;
 
