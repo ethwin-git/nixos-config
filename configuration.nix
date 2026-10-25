@@ -77,19 +77,8 @@
    options = "--delete-older-than 30d";
  };
  nix.settings.auto-optimise-store = true;
+
  
-
- hardware.cpu.amd.updateMicrocode = true;
-
- hardware.graphics.enable = true;
- services.xserver.videoDrivers = [ "nvidia" ];
- hardware.nvidia = {
- open = true;
- nvidiaSettings = true;
- modesetting.enable = true;
- };
- 
-
  systemd.sleep.settings.Sleep= {
    AllowSuspend = "no";
    AllowHibernation = "no";
