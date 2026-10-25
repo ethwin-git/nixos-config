@@ -1,4 +1,12 @@
-{ self, inputs, ... }: {
+{ self, inputs, ... }:
+
+let
+  sharedModules = builtins.filter
+  (name: builtins.match "user-.*" name == null)
+  (builtins.attrNames self.nixosModules);
+  in
+   {
+     
   flake.nixosConfigurations.Daisy = inputs.nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
 
@@ -6,13 +14,12 @@
       ../../configuration.nix
       inputs.home-manager.nixosModules.home-manager
      ]
-      ++ (with self.nixosModules; [
-      features-git
-      user-ethan
-      hardware-nvidia
-      hardware-amd-cpu
-     ]) ++ [
-     
+      ++ map (name: builtins.getAttr name self.nixosModules)
+        sharedModules
+      ++ [
+        
+         self.nixosModules.user-ethan
+             
       {
         nixpkgs.config.allowUnfree = true;
 
