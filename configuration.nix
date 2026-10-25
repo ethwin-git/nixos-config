@@ -51,14 +51,6 @@
 
   
   programs.zsh.enable = true;
-  users.users.ethan = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
-    shell = pkgs.zsh;
-    packages = with pkgs; [
-      tree
-    ];
-  };
  
   programs.hyprland.enable = true;
   programs.firefox.enable = true;

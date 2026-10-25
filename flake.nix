@@ -48,14 +48,12 @@
            inputs.home-manager.nixosModules.home-manager
 
            self.nixosModules.features-git
+           self.nixosModules.user-ethan
 
            {
              home-manager.useGlobalPkgs = true;
              home-manager.useUserPackages = true;
              home-manager.backupFileExtension = "backup";
-             home-manager.users.ethan = import ./home-manager/home.nix;
-
-             features.git.enable = true;
            }
          ];
        };      
