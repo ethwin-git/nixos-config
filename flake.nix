@@ -26,37 +26,5 @@
           (inputs.import-tree ./modules)
 
         ];
-
-        flake = 
-    let
-      system = "x86_64-linux";
-      pkgs = import inputs.nixpkgs {
-        inherit system;
-        config = {
-          allowUnfree = true;
-        };
       };
-    in
-    {
-       nixosConfigurations.Daisy = inputs.nixpkgs.lib.nixosSystem {
-         inherit system;
-
-         modules = [
-           { nixpkgs.pkgs = pkgs; }
-           ./configuration.nix
-
-           inputs.home-manager.nixosModules.home-manager
-
-           self.nixosModules.features-git
-           self.nixosModules.user-ethan
-
-           {
-             home-manager.useGlobalPkgs = true;
-             home-manager.useUserPackages = true;
-             home-manager.backupFileExtension = "backup";
-           }
-         ];
-       };      
-    };
-  };
-}
+    }
