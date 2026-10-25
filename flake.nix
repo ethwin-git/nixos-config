@@ -22,7 +22,10 @@
     inputs@ {self, flake-parts, import-tree, ... }:
       flake-parts.lib.mkFlake { inherit inputs; } {
 
-        imports = [ ];
+        imports = [
+          (inputs.import-tree ./modules)
+
+        ];
 
         flake = 
     let
@@ -44,11 +47,15 @@
 
            inputs.home-manager.nixosModules.home-manager
 
+           self.nixosModules.features-git
+
            {
              home-manager.useGlobalPkgs = true;
              home-manager.useUserPackages = true;
              home-manager.backupFileExtension = "backup";
              home-manager.users.ethan = import ./home-manager/home.nix;
+
+             features.git.enable = true;
            }
          ];
        };      
