@@ -18,6 +18,7 @@ in
       imports = [
         ../../home-manager/home.nix
         hmModules.git
+        hmModules.easyeffects
       ];
     };
   };
