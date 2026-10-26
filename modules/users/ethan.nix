@@ -19,6 +19,7 @@ in
         ../../home-manager/home.nix
         hmModules.git
         hmModules.easyeffects
+        hmModules.nixcord
       ];
     };
   };
