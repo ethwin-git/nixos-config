@@ -1,5 +1,10 @@
-{ self, ... }: {
-  flake.nixosModules.user-ethan = { config, pkgs, ... }: {
+{ config, ... }:
+let
+  hmModules = config.flake.modules.homeManager;
+in
+
+{
+  flake.modules.nixos.ethan = { pkgs, ... }: {
     users.users.ethan = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
@@ -9,8 +14,11 @@
       ];
     };
 
-    features.git.enable = true;
-
-    home-manager.users.ethan = import ../../home-manager/home.nix;
+    home-manager.users.ethan = {
+      imports = [
+        ../../home-manager/home.nix
+        hmModules.git
+      ];
+    };
   };
 }

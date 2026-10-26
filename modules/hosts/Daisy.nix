@@ -1,37 +1,29 @@
-{ self, inputs, ... }:
+{ inputs, config, ... }:
 
 let
-  sharedModules = builtins.filter
-  (name: builtins.match "user-.*" name == null)
-  (builtins.attrNames self.nixosModules);
-  in
-   {
-     
+  nixos = config.flake.modules.nixos;
+in
+{     
   flake.nixosConfigurations.Daisy = inputs.nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
-
-    modules = [
+    modules = [ nixos.Daisy ];
+    };
+    
+  flake.modules.nixos.Daisy = {
+    imports = [
       ../../configuration.nix
-      inputs.home-manager.nixosModules.home-manager
-     ]
-      ++ map (name: builtins.getAttr name self.nixosModules)
-        sharedModules
-      ++ [
-        
-         self.nixosModules.user-ethan
-             
-      {
-        nixpkgs.config.allowUnfree = true;
+      inputs.home-manager.nixosModules.home-manager        
+      nixos.ethan
+      nixos.amd-cpu
+      nixos.nvidia
+    ];
 
-        hardware.nvidia.enable = true;
-        hardware.cpu.amd.enable = true;
+        nixpkgs.hostPlatform = "x86_64-linux";     
+        nixpkgs.config.allowUnfree = true;
         
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
           backupFileExtension = "backup";
         };
-      }
-    ];
-  };
-}
+      };    
+    }

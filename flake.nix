@@ -9,22 +9,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
       };
 
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+
+    import-tree.url = "github:denful/import-tree";
       };
 
-    import-tree = {
-      url = "github:denful/import-tree";
-      };
-    };
-
-  outputs =
-    inputs@ {self, flake-parts, import-tree, ... }:
-      flake-parts.lib.mkFlake { inherit inputs; } {
-
-        imports = [
-          (inputs.import-tree ./modules)
-
-        ];
-      };
-    }
+  outputs = inputs:
+      inputs.flake-parts.lib.mkFlake { inherit inputs; }
+          (inputs.import-tree ./modules);
+}

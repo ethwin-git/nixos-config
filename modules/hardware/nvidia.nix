@@ -1,17 +1,12 @@
-{ self, ... }: {
-  
-  flake.nixosModules.hardware-nvidia = { config, lib, pkgs, ... }: {
-    options.hardware.nvidia.enable = lib.mkEnableOption "Nvidia drivers";
-
-    config = lib.mkIf config.hardware.nvidia.enable {
-
+{  
+  flake.modules.nixos.nvidia = { config, ... }: {
         hardware.graphics.enable = true;
         services.xserver.videoDrivers = [ "nvidia" ];
         hardware.nvidia = {
           open = true;
           nvidiaSettings = true;
           modesetting.enable = true;
-          };
-         };
-       };
-     }
+          package = config.boot.kernelPackages.nvidiaPackages.stable;
+        };
+    };
+}
