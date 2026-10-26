@@ -10,8 +10,6 @@
       };
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:denful/import-tree";
-
-    nixcord.url = "github:4evy/nixcord";
       };
 
   outputs = inputs:
