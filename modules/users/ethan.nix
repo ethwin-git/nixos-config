@@ -32,6 +32,7 @@ in
         hmModules.kitty
         hmModules.ohmyposh
         hmModules.pwvucontrol
+        hmModules.ssh
       ];
     };
   };
