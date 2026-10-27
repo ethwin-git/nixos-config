@@ -4,7 +4,6 @@
   imports = [
     ./terminal
     ./ssh
-    ./waybar
     ./swaync
     ./pwvucontrol
     ./texteditors
