@@ -1,5 +1,5 @@
 {
-  description = "Home Manager and System";
+  description = "Flake Bouncer";
 
   inputs = {  
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
