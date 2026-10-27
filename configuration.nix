@@ -6,22 +6,7 @@
       ./hardware-configuration.nix
     ];
 
-  boot.loader = {
-    limine = {
-      enable = true;
-      secureBoot.enable = true;
-      extraEntries = ''
-      /Windows
-        protocol: efi
-        path: uuid(97e960b2-e6fe-4d9f-954a-7cf2150b163d):/EFI/Microsoft/Boot/bootmgfw.efi
-    '';
-    };
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/efi";
-    };
-   };
-
+  
   services.displayManager.ly.enable = true;
 
   networking.hostName = "Daisy"; # Define your hostname.
@@ -31,28 +16,7 @@
   time.timeZone = "America/New_York";
 
 
-  security.rtkit.enable = true;
-  services = {
-	  pulseaudio.enable = false;
-
-	  pipewire = {
-	    enable = true;
-	    alsa.enable = true;
-      alsa.support32Bit = true;
-      pulse.enable = true;
-      wireplumber.enable = true;
-      jack.enable = false;
-
-    extraConfig.pipewire."92-low-latency" = {
-      "context.properties" = {
-        "default.clock.rate" = 48000;
-        "default.clock.quantum" = 256;
-        "default.clock.min-quantum" = 32;
-        "default.clock.max-quantum" = 1024;
-        };
-      };
-    };
-  };
+  
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
@@ -63,7 +27,6 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-    sbctl
     git
   ];
 

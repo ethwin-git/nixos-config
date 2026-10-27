@@ -18,6 +18,8 @@ in
       nixos.hyprland
       nixos.helix
       nixos.zsh
+      nixos.boot
+      nixos.audio
     ];
 
         nixpkgs.hostPlatform = "x86_64-linux";     
