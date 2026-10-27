@@ -26,6 +26,7 @@ in
         hmModules.awww-waypaper
         hmModules.waybar
         hmModules.swaync
+        hmModules.helix
       ];
     };
   };

@@ -5,7 +5,6 @@
     ./terminal
     ./ssh
     ./pwvucontrol
-    ./texteditors
   ];
   
   home.username = "ethan";
