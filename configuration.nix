@@ -30,16 +30,7 @@
     git
   ];
 
-  fonts.packages = with pkgs; [
-     noto-fonts
-     noto-fonts-cjk-sans
-     noto-fonts-cjk-serif
-     noto-fonts-color-emoji
-     nerd-fonts.iosevka
-     nerd-fonts.jetbrains-mono
-     font-awesome
-];
-
+  
  nix.gc = {
    automatic = true;
    dates = "weekly";

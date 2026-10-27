@@ -20,6 +20,7 @@ in
       nixos.zsh
       nixos.boot
       nixos.audio
+      nixos.fonts
     ];
 
         nixpkgs.hostPlatform = "x86_64-linux";     
