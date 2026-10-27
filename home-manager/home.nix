@@ -4,7 +4,6 @@
   imports = [
     ./terminal
     ./ssh
-    ./swaync
     ./pwvucontrol
     ./texteditors
   ];

@@ -25,6 +25,7 @@ in
         hmModules.rofi
         hmModules.awww-waypaper
         hmModules.waybar
+        hmModules.swaync
       ];
     };
   };
