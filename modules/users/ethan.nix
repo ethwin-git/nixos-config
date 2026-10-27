@@ -15,8 +15,8 @@ in
     };
 
     home-manager.users.ethan = {
+      home.stateVersion = "26.05";
       imports = [
-        ../../home-manager/home.nix
         hmModules.git
         hmModules.easyeffects
         hmModules.vesktop
