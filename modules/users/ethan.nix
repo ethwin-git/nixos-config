@@ -33,6 +33,7 @@ in
         hmModules.ohmyposh
         hmModules.pwvucontrol
         hmModules.ssh
+        hmModules.zen-browser
       ];
     };
   };
