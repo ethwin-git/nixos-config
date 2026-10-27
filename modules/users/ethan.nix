@@ -21,6 +21,7 @@ in
         hmModules.easyeffects
         hmModules.vesktop
         hmModules.hyprland
+        hmModules.bibata-cursors
       ];
     };
   };

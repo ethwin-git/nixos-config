@@ -6,7 +6,6 @@
     ./ssh
     ./waybar
     ./swaync
-    ./bibata-cursors
     ./pwvucontrol
     ./desktopBG
     ./texteditors

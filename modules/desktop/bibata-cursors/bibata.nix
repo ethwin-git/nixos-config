@@ -1,5 +1,6 @@
-{ config, pkgs, ... }: {
-      
+{
+  flake.modules.homeManager.bibata-cursors = { pkgs, ... }: {
+          
     home.pointerCursor = {
          enable = true;
          package = pkgs.bibata-cursors;
@@ -8,4 +9,5 @@
          gtk.enable = true;
          x11.enable = true;
     };
-  }
+  };
+}
