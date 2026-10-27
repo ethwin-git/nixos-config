@@ -3,7 +3,6 @@
 {
   imports = [
     ./ssh
-    ./pwvucontrol
   ];
   
   home.username = "ethan";

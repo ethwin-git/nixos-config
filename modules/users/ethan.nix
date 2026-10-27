@@ -31,6 +31,7 @@ in
         hmModules.fastfetch
         hmModules.kitty
         hmModules.ohmyposh
+        hmModules.pwvucontrol
       ];
     };
   };
