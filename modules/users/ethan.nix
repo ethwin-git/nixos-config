@@ -22,6 +22,7 @@ in
         hmModules.vesktop
         hmModules.hyprland
         hmModules.bibata-cursors
+        hmModules.rofi
       ];
     };
   };

@@ -9,7 +9,6 @@
     ./pwvucontrol
     ./desktopBG
     ./texteditors
-    ./rofi/rofi.nix
   ];
   
   home.username = "ethan";
