@@ -20,6 +20,7 @@ in
         hmModules.git
         hmModules.easyeffects
         hmModules.vesktop
+        hmModules.hyprland
       ];
     };
   };
