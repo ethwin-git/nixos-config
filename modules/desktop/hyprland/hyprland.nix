@@ -1,4 +1,8 @@
 {
+  flake.modules.nixos.hyprland = {
+    programs.hyprland.enable = true;
+  };
+  
   flake.modules.homeManager.hyprland = { pkgs, ... }: {
     home.packages = [pkgs.hyprpicker ]; 
 

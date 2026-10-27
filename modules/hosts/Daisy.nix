@@ -15,6 +15,9 @@ in
       nixos.ethan
       nixos.amd-cpu
       nixos.nvidia
+      nixos.hyprland
+      nixos.helix
+      nixos.zsh
     ];
 
         nixpkgs.hostPlatform = "x86_64-linux";     
