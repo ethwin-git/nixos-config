@@ -7,7 +7,6 @@
     ./waybar
     ./swaync
     ./pwvucontrol
-    ./desktopBG
     ./texteditors
   ];
   

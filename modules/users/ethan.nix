@@ -23,6 +23,7 @@ in
         hmModules.hyprland
         hmModules.bibata-cursors
         hmModules.rofi
+        hmModules.awww-waypaper
       ];
     };
   };
