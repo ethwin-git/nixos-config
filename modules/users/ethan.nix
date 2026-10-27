@@ -27,6 +27,10 @@ in
         hmModules.waybar
         hmModules.swaync
         hmModules.helix
+        hmModules.zsh
+        hmModules.fastfetch
+        hmModules.kitty
+        hmModules.ohmyposh
       ];
     };
   };

@@ -1,4 +1,5 @@
-{ config, pkgs, ... }: {
+{
+  flake.modules.homeManager.kitty = {
        programs.kitty = {
          enable = true;
          extraConfig = ''
@@ -6,4 +7,5 @@
            ${builtins.readFile ./current-theme.conf}
          '';
        };
- }
+    };
+}

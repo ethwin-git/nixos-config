@@ -1,4 +1,5 @@
-{ config, pkgs, ... }: {
+{
+  flake.modules.homeManager.zsh = {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -19,6 +20,7 @@
     shellAliases = {
       ls = "ls --color=auto";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config/#Daisy";
+      lg = "lazygit";
       
     };
   };
@@ -30,5 +32,6 @@
 
   home.sessionVariables = {
     EDITOR = "hx";
+    };
   };
 }
