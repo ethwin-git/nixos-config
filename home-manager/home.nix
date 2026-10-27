@@ -3,7 +3,6 @@
 {
   imports = [
     ./terminal
-    ./hypr
     ./ssh
     ./waybar
     ./swaync
