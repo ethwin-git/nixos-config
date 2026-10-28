@@ -1,10 +1,13 @@
 { config, ... }:
 let
   hmModules = config.flake.modules.homeManager;
+  nixos = config.flake.modules.nixos;
 in
 
 {
   flake.modules.nixos.ethan = { pkgs, ... }: {
+    imports = [ nixos.steam ];
+    
     users.users.ethan = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
