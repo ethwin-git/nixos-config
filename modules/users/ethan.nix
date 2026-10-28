@@ -25,10 +25,6 @@ in
         hmModules.vesktop
         hmModules.hyprland
         hmModules.bibata-cursors
-        hmModules.rofi
-        hmModules.awww-waypaper
-        hmModules.waybar
-        hmModules.swaync
         hmModules.helix
         hmModules.zsh
         hmModules.fastfetch
@@ -37,6 +33,7 @@ in
         hmModules.pwvucontrol
         hmModules.ssh
         hmModules.zen-browser
+        hmModules.noctalia
       ];
     };
   };
