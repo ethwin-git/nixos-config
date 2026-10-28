@@ -1,0 +1,19 @@
+{
+  flake.modules.homeManager.ssh = {
+
+  services.ssh-agent.enable = true;
+
+  programs.ssh = {
+    enable = true;
+    enableDefaultConfig = false;
+    settings = {
+      "github.com" = {
+        IdentityFile = "~/.ssh/id_ed25519";
+        IdentitiesOnly = true;
+        "AddKeysToAgent" = "yes";
+        };
+      };
+    };
+  };
+}
+
