@@ -46,12 +46,12 @@
     "format": "{$1} {sysname} {release}",
     "keyColor": "#458588"
   },
- {
-    "type": "packages",
-    "key": "│ Packages",
-    "format": "{$1} {nix-user} (user)",
-    "keyColor": "#458588"
-  },
+ //{
+ //   "type": "packages",
+ //   "key": "│ Packages",
+ //   "format": "{$1} {nix-user} (user)",
+ //   "keyColor": "#458588"
+ // },
  {
     "type": "shell",
     "key": "│ Shell",
