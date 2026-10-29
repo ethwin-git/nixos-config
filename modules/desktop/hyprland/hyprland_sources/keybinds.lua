@@ -9,9 +9,9 @@
 
 local terminal = "kitty --single-instance"
 local fileManager = "kitty -e yazi"
-local menu = "rofi -show drun"
-local browser = "zen-browser"
-local wallpaper = "waypaper"
+local menu = "noctalia msg panel-toggle launcher"
+local browser = "zen-beta"
+local wallpaper = "noctalia msg panel-toggle wallpaper"
 
 local HOME = os.getenv("HOME")
 local SSDIR = HOME .. "/Pictures/Screenshots"
