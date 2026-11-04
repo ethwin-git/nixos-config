@@ -24,6 +24,7 @@ in
       nixos.nix
       nixos.networking
       nixos.login
+      nixos.umbriel
     ];
 
     programs.firefox.enable = true;

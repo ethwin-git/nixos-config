@@ -11,6 +11,10 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:denful/import-tree";
 
+    umbriel = {
+      url = "github:noctalia-dev/umbriel";
+      };
+
       zen-browser = {
     url = "github:0xc000022070/zen-browser-flake";
     inputs = {

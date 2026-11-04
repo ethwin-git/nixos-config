@@ -34,6 +34,7 @@ in
         hmModules.ssh
         hmModules.zen-browser
         hmModules.noctalia
+        hmModules.umbriel
       ];
     };
   };
