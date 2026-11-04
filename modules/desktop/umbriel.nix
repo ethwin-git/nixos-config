@@ -12,7 +12,13 @@
     programs.umbriel = {
       enable = true;
       settings = {
-        general.autostart = [ "noctalia" ];
+        general = {
+          autostart = [ "noctalia" ];
+          xwayland = true;
+          xwayland_native_resolution = true;
+          show_cheatsheet = false;
+          
+          };
         layout = {
           mode = "scrolling"; 
           gap = 5;
