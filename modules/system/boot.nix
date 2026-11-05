@@ -4,6 +4,7 @@
     limine = {
       enable = true;
       secureBoot.enable = true;
+      maxGenerations = 5;
     };
     efi = {
       canTouchEfiVariables = true;
