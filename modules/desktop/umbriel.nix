@@ -122,7 +122,7 @@
         };
 
         input.mouse = {
-          sensitivity = 0.0;
+          sensitivity = -0.15;
           accel_profile = "flat";
         };
 
