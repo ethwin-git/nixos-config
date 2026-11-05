@@ -35,6 +35,7 @@ in
         hmModules.zen-browser
         hmModules.noctalia
         hmModules.umbriel
+        hmModules.prismlauncher
       ];
     };
   };

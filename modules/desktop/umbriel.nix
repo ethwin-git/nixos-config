@@ -4,6 +4,10 @@
     imports = [ inputs.umbriel.nixosModules.default ];
 
     programs.umbriel.enable = true;
+
+    boot.extraModprobeConfig = ''
+      options hid_apple fnmode=2
+      '';
   };
 
   flake.modules.homeManager.umbriel = {
