@@ -83,6 +83,9 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
         show_unlock_hint = true
         show_weather = true
 
+[osd.kinds]
+media = false
+
 [shell]
 avatar_path = "/home/ethan/nixos-config/modules/desktop/noctalia/avatar/cashmoney profile pic.png"
 polkit_agent = true
@@ -138,16 +141,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/Pictures/Wallpapers/1367715_smoothed_gruvbox.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/Pictures/Wallpapers/1367715_smoothed_gruvbox.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/Pictures/Wallpapers/1367715_smoothed_gruvbox.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/Pictures/Wallpapers/1367715_smoothed_gruvbox.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
 [widget.audio_visualizer]
 width = 205
