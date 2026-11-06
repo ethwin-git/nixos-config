@@ -46,6 +46,10 @@
             blur = true;
           }
           {
+            match.app_id = "^kitty$";
+            blur = false;
+          }
+          {
             match.app_id = "^vesktop$";
             default_output = "DP-1";
           }
