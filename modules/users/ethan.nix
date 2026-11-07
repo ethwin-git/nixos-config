@@ -23,7 +23,6 @@ in
         hmModules.git
         hmModules.easyeffects
         hmModules.vesktop
-        hmModules.hyprland
         hmModules.bibata-cursors
         hmModules.helix
         hmModules.zsh

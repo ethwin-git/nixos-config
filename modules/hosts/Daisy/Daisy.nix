@@ -15,7 +15,6 @@ in
       nixos.ethan
       nixos.amd-cpu
       nixos.nvidia
-      nixos.hyprland
       nixos.helix
       nixos.zsh
       nixos.boot
