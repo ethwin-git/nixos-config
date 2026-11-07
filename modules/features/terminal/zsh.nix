@@ -23,7 +23,7 @@
 
     shellAliases = {
       ls = "ls --color=auto";
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos-config/#Daisy";
+      nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
       lg = "lazygit";
       
     };
