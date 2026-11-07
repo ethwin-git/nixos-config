@@ -141,16 +141,19 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
+
+[weather]
+unit = "imperial"
 
 [widget.audio_visualizer]
 width = 205
