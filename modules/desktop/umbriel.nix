@@ -50,7 +50,7 @@
             blur = false;
           }
           {
-            match.app_id = "^vesktop$";
+            match.app_id = "^equibop$";
             default_output = "DP-1";
           }
         ];

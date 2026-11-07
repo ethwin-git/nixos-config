@@ -15,14 +15,16 @@
       url = "github:noctalia-dev/umbriel";
       };
 
-      zen-browser = {
-    url = "github:0xc000022070/zen-browser-flake";
-    inputs = {
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
       # IMPORTANT: To ensure compatibility with the latest Firefox version, use nixpkgs-unstable.
-      nixpkgs.follows = "nixpkgs";
-      home-manager.follows = "home-manager";
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
     };
   };
+
+    nixcord.url = "github:4evy/nixcord";
 
       };
 

@@ -24,9 +24,8 @@ in
       nixos.networking
       nixos.login
       nixos.umbriel
+      nixos.nix-ld
     ];
-
-    programs.firefox.enable = true;
 
         networking.hostName = "Daisy";
         time.timeZone = "America/New_York";

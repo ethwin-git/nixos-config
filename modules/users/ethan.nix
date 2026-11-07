@@ -22,7 +22,6 @@ in
       imports = [
         hmModules.git
         hmModules.easyeffects
-        hmModules.vesktop
         hmModules.bibata-cursors
         hmModules.helix
         hmModules.zsh
@@ -35,6 +34,7 @@ in
         hmModules.noctalia
         hmModules.umbriel
         hmModules.prismlauncher
+        hmModules.nixcord
       ];
     };
   };
