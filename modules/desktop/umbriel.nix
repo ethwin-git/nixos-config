@@ -82,6 +82,9 @@
           "Mod+Shift+Left" = "window-move-to-output-left";
           "Mod+S" = "window-cycle-primary-extent";
 
+          "Mod+Alt+Right" = "output-focus-right";
+          "Mod+Alt+Left" = "output-focus-left";
+
           "Mod+Shift+Comma" = "column-move-left";
           "Mod+Shift+Period" = "column-move-right";
 
@@ -140,6 +143,10 @@
 
         layout.scrolling = {
           center_focused = "on_overflow";
+        };
+
+        colors.border = {
+          focused = "#77E4F7";
         };
         
         };
