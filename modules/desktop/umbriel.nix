@@ -53,6 +53,11 @@
             match.app_id = "^equibop$";
             default_output = "DP-1";
           }
+          {
+            match.app_id = "^Edmarketconnector$";
+            default_output = "DP-1";
+            default_floating = true;
+          }
         ];
 
         keybinds = {
