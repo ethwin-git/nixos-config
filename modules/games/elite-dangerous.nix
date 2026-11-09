@@ -4,6 +4,7 @@
       min-ed-launcher #Steam Launch Options: MinEdLauncher %command% /edo /autorun /autoquit
       edhm-ui
       edmarketconnector
+      ed-odyssey-materials-helper
     ];
 
     home.file.".config/min-ed-launcher/settings.json".text = ''
