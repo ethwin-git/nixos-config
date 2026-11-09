@@ -3,11 +3,13 @@
 
   inputs = {  
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       };
+      
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:denful/import-tree";
 
@@ -26,8 +28,9 @@
 
     nixcord.url = "github:4evy/nixcord";
 
-      };
 
+
+};
   outputs = inputs:
       inputs.flake-parts.lib.mkFlake { inherit inputs; }
           (inputs.import-tree ./modules);
