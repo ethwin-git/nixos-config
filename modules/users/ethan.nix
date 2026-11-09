@@ -14,6 +14,8 @@ in
       shell = pkgs.zsh;
       packages = with pkgs; [
         tree
+        unzip
+        bat
       ];
     };
 
@@ -35,6 +37,7 @@ in
         hmModules.umbriel
         hmModules.prismlauncher
         hmModules.nixcord
+        hmModules.elite-dangerous
       ];
     };
   };
