@@ -1,7 +1,19 @@
 [bar.default]
 center = [ "audio_visualizer", "control-center", "audio_visualizer" ]
-end = [ "media", "tray", "clipboard", "network", "volume", "clock", "notifications" ]
-start = [ "session", "launcher", "wallpaper", "workspaces" ]
+end = [
+    "media",
+    "spacer_3",
+    "clipboard",
+    "spacer_4",
+    "tray",
+    "spacer_4",
+    "volume",
+    "spacer_4",
+    "clock",
+    "spacer_4",
+    "notifications"
+]
+start = [ "session", "spacer_2", "workspaces" ]
 
 [desktop_widgets]
 schema_version = 2
@@ -86,6 +98,9 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
 [osd.kinds]
 media = false
 
+[plugins]
+enabled = []
+
 [shell]
 avatar_path = "/home/ethan/nixos-config/modules/desktop/noctalia/avatar/cashmoney profile pic.png"
 polkit_agent = true
@@ -141,16 +156,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/1367715.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
 
 [weather]
 unit = "imperial"
@@ -161,9 +176,31 @@ width = 205
 [widget.clock]
 format = "{:%I:%M %p}"
 
-[widget.network.actions]
-right = "none"
+[widget.control-center]
+anchor = true
+custom_image = "/home/ethan/nixos-config/modules/desktop/noctalia/avatar/Nix_snowflake.svg"
+
+[widget.media]
+hide_artist = true
+rotate_album_art = true
+show_progress = true
+title_scroll = "on_hover"
+
+[widget.network]
+enabled = false
+
+    [widget.network.actions]
+    right = "none"
 
 [widget.spacer_2]
-enabled = false
+enabled = true
+length = 27
+type = "spacer"
+
+[widget.spacer_3]
+length = 120
+type = "spacer"
+
+[widget.spacer_4]
+length = 10
 type = "spacer"
