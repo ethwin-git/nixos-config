@@ -93,8 +93,12 @@
           "Mod+Shift+Comma" = "column-move-left";
           "Mod+Shift+Period" = "column-move-right";
 
+          "Mod+Shift+KP_Divide" = "spawn noctalia msg screenshot-fullscreen";
+          "Mod+Shift+KP_Multiply" = "spawn noctalia msg screenshot-region";
+          "Mod+Shift+KP_Subtract" = "spawn noctalia msg screenshot-window";
+          "Mod+KP_Divide" = "spawn noctalia msg screenshot-fullscreen --no-save-to-file";
           "Mod+KP_Multiply" = "spawn noctalia msg screenshot-region --no-save-to-file";
-          "Mod+Shift+S" = "spawn noctalia msg screenshot-region";
+          "Mod+KP_Subtract" = "spawn noctalia msg screenshot-window --no-save-to-file";
 
           "Mod+1" = "workspace-switch 1";          
           "Mod+2" = "workspace-switch 2";
