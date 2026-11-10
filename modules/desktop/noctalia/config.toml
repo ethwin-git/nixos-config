@@ -1,18 +1,6 @@
 [bar.default]
 center = [ "audio_visualizer", "control-center", "audio_visualizer" ]
-end = [
-    "media",
-    "spacer_3",
-    "clipboard",
-    "spacer_4",
-    "tray",
-    "spacer_4",
-    "volume",
-    "spacer_4",
-    "clock",
-    "spacer_4",
-    "notifications"
-]
+end = [ "clipboard", "spacer_4", "tray", "spacer_4", "volume", "spacer_4", "clock", "spacer_4", "notifications" ]
 start = [ "session", "spacer_2", "workspaces" ]
 
 [desktop_widgets]
@@ -156,22 +144,26 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/godzilla-fighting-in-city-desktop-wallpaper.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
 
 [weather]
 unit = "imperial"
 
 [widget.audio_visualizer]
+show_when_idle = true
 width = 205
+
+    [widget.audio_visualizer.actions]
+    left = "panel-toggle control-center media"
 
 [widget.clock]
 format = "{:%I:%M %p}"
@@ -182,6 +174,8 @@ custom_image = "/home/ethan/nixos-config/modules/desktop/noctalia/avatar/Nix_sno
 
 [widget.media]
 hide_artist = true
+hide_when_idle = true
+hide_when_no_media = true
 rotate_album_art = true
 show_progress = true
 title_scroll = "on_hover"
