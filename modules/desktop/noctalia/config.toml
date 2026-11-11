@@ -1,7 +1,7 @@
 [bar.default]
 center = [ "audio_visualizer", "control-center", "audio_visualizer" ]
 end = [ "clipboard", "spacer_4", "tray", "spacer_4", "volume", "spacer_4", "clock", "spacer_4", "notifications" ]
-start = [ "session", "spacer_2", "workspaces" ]
+start = [ "workspaces" ]
 
 [desktop_widgets]
 schema_version = 2
@@ -92,45 +92,52 @@ enabled = []
 [shell]
 avatar_path = "/home/ethan/nixos-config/modules/desktop/noctalia/avatar/cashmoney profile pic.png"
 polkit_agent = true
+show_location = false
 time_format = "{:%I:%M %p}"
+
+    [shell.panel]
+    wallpaper_show_names = false
 
     [shell.screenshot]
     directory = "/home/ethan/Pictures/Screenshots"
 
-    [[shell.session.actions]]
-    action = "lock"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "1"
-    variant = "default"
+    [shell.session]
+    grid_columns = 2
 
-    [[shell.session.actions]]
-    action = "logout"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "2"
-    variant = "default"
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
 
-    [[shell.session.actions]]
-    action = "lock_and_suspend"
-    countdown_seconds = 0.0
-    enabled = false
-    shortcut = "3"
-    variant = "default"
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "2"
+        variant = "default"
 
-    [[shell.session.actions]]
-    action = "reboot"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "4"
-    variant = "default"
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = false
+        shortcut = "3"
+        variant = "default"
 
-    [[shell.session.actions]]
-    action = "shutdown"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "5"
-    variant = "destructive"
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "4"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "5"
+        variant = "destructive"
 
 [theme]
 builtin = "Noctalia"
@@ -144,16 +151,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallpapersden.com_godzilla-s-empire-reign_3840x2160.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
 
 [weather]
 unit = "imperial"
@@ -186,6 +193,9 @@ enabled = false
     [widget.network.actions]
     right = "none"
 
+[widget.session]
+enabled = false
+
 [widget.spacer_2]
 enabled = true
 length = 27
@@ -196,5 +206,6 @@ length = 120
 type = "spacer"
 
 [widget.spacer_4]
+enabled = false
 length = 10
 type = "spacer"
