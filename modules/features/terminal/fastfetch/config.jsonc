@@ -1,9 +1,9 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-  "type": "small",  //kitty or kitty-direct works if I don't have kitty terminal or kitty-icat installed
-  //"source": "",
-  //"width": 26,
+  "type": "auto",  //kitty or kitty-direct works if I don't have kitty terminal or kitty-icat installed
+  "source": "~/nixos-config/modules/features/terminal/fastfetch/images/*",
+  "width": 19,
   "padding": {
       "top": 4,
       "left": 5
