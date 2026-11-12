@@ -5,6 +5,7 @@
 
     programs.umbriel.enable = true;
 
+   # Makes F Keys function normally
     boot.extraModprobeConfig = ''
       options hid_apple fnmode=2
       '';
@@ -68,7 +69,7 @@
           "Mod+Tab" = "overview-toggle";
 
           "Mod+V" = "window-toggle-floating";
-          "Mod+E" = "window-toggle-fullscreen";
+          "Mod+F" = "window-toggle-fullscreen";
 
           "Mod+MouseMiddle" = "layout-scroll-drag";
           "Mod+MouseForward" = "workspace-previous";

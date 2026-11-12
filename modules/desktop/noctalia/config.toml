@@ -141,7 +141,7 @@ time_format = "{:%I:%M %p}"
 
 [theme]
 builtin = "Noctalia"
-community_palette = "Oxocarbon"
+community_palette = "ADW"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "vibrant"
@@ -151,16 +151,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/wallhaven-8gkx51.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
 
 [weather]
 unit = "imperial"
