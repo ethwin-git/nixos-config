@@ -16,7 +16,7 @@
       package = pkgs.steam.override {
         extraEnv = {
           MANGOHUD = "1";
-          MANGOHUD_CONFIG = "fps,frametime,cpu_stats,cpu_temp,gpu_stats,gpu_temp,ram,vram,resolution,font_scale=2,toggle_hud=SHIFT+SHIFT_R+H";
+          MANGOHUD_CONFIG = "fps,frametime,cpu_stats,cpu_temp,gpu_stats,gpu_temp,ram,vram,resolution,font_scale=2,no_display,toggle_hud=SHIFT+SHIFT_R+H";
         };
       };
     };
