@@ -1,6 +1,6 @@
 [bar.default]
 center = [ "audio_visualizer", "control-center", "audio_visualizer" ]
-end = [ "clipboard", "spacer_4", "tray", "spacer_4", "volume", "spacer_4", "clock", "spacer_4", "notifications" ]
+end = [ "clipboard", "tray", "volume", "clock", "notifications" ]
 start = [ "workspaces" ]
 
 [desktop_widgets]
@@ -151,16 +151,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/006.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/006.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/006.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/003.jpg"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/006.jpg"
 
 [weather]
 unit = "imperial"
@@ -209,3 +209,7 @@ type = "spacer"
 enabled = false
 length = 10
 type = "spacer"
+
+[widget.workspaces]
+pill_scale = 0.70000000000000007
+show_labels = false
