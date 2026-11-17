@@ -148,7 +148,7 @@
         };
 
         input.focus = {
-          follows_mouse = false;
+          follows_mouse = "off";
         };
 
         layout.scrolling = {
