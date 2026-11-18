@@ -95,6 +95,9 @@ polkit_agent = true
 show_location = false
 time_format = "{:%I:%M %p}"
 
+    [shell.greeter_sync]
+    auto_sync = true
+
     [shell.panel]
     wallpaper_show_names = false
 
