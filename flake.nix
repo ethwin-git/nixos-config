@@ -28,7 +28,10 @@
 
     nixcord.url = "github:4evy/nixcord";
 
-
+    luciole = {
+      url = "github:noctalia-dev/luciole";
+      inputs.nixpkgs.follows = "nixpkgs";
+      };
 
 };
   outputs = inputs:

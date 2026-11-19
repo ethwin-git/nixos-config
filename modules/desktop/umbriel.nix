@@ -66,6 +66,7 @@
           "Mod+CTRL+C" = "window-close";
           "Mod+SPACE" = "spawn noctalia msg panel-toggle launcher";
           "Mod+B" = "spawn zen-beta";
+          "Mod+E" = "spawn luciole";
           "Mod+Tab" = "overview-toggle";
 
           "Mod+V" = "window-toggle-floating";

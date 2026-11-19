@@ -25,6 +25,7 @@ in
       nixos.display-manager
       nixos.umbriel
       nixos.nix-ld
+      nixos.gvfs
     ];
 
         networking.hostName = "Daisy";

@@ -39,6 +39,7 @@ in
         hmModules.prismlauncher
         hmModules.nixcord
         hmModules.elite-dangerous
+        hmModules.luciole
       ];
     };
   };
