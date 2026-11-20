@@ -22,7 +22,7 @@ in
       nixos.fonts
       nixos.nix
       nixos.networking
-      nixos.display-manager
+      nixos.noctalia-greeter
       nixos.umbriel
       nixos.nix-ld
       nixos.gvfs

@@ -63,11 +63,12 @@
 
         keybinds = {
           "Mod+Return" = "spawn kitty";
-          "Mod+CTRL+C" = "window-close";
+          "Mod+Q" = "window-close";
           "Mod+SPACE" = "spawn noctalia msg panel-toggle launcher";
           "Mod+B" = "spawn zen-beta";
           "Mod+E" = "spawn luciole";
           "Mod+Tab" = "overview-toggle";
+          "Alt+Tab" = "spawn noctalia msg window-switcher hold";
 
           "Mod+V" = "window-toggle-floating";
           "Mod+F" = "window-toggle-fullscreen";
@@ -92,8 +93,12 @@
           "Mod+Alt+Right" = "output-focus-right";
           "Mod+Alt+Left" = "output-focus-left";
 
-          "Mod+Shift+Comma" = "column-move-left";
-          "Mod+Shift+Period" = "column-move-right";
+          "Mod+CTRL+Alt+Left" = "column-move-left";
+          "Mod+CTRL+Alt+Right" = "column-move-right";
+          "Mod+CTRL+Left" = "window-move-left";
+          "Mod+CTRL+Right" = "window-move-right";
+          "Mod+CTRL+Up" = "window-move-up";
+          "Mod+CTRL+Down" = "window-move-down";
 
           "Mod+Shift+KP_Divide" = "spawn noctalia msg screenshot-fullscreen";
           "Mod+Shift+KP_Multiply" = "spawn noctalia msg screenshot-region";

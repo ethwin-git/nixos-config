@@ -1,5 +1,5 @@
 {
-  flake.modules.nixos.display-manager = { pkgs, ... }: {
+  flake.modules.nixos.noctalia-greeter = { pkgs, ... }: {
       services.displayManager.noctalia-greeter = {
         enable = true;
         settings = {
@@ -13,6 +13,7 @@
         package = pkgs.bibata-cursors;
         name = "Bibata-Modern-Classic";
       };
+      passwordlessSyncUsers = [ "ethan" ];
     };
   };
 }
