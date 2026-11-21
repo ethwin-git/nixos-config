@@ -26,10 +26,14 @@
           };
         layout = {
           mode = "scrolling"; 
-          gap = 5;
+          gap = 3;
           extent_presets = [ 0.5 0.97 ];
           };
 
+        appearance = {
+          corner_radius = 0;
+        };
+        
         appearance.blur = {
           enabled = true;
           optimized = true;
