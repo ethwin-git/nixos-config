@@ -25,9 +25,8 @@
           
           };
         layout = {
-          mode = "scrolling"; 
+          mode = "dwindle"; 
           gap = 3;
-          extent_presets = [ 0.5 0.97 ];
           };
 
         appearance = {
@@ -51,6 +50,10 @@
             blur = true;
           }
           {
+            match.is_alone = true;
+            default_maximize = true;
+          }
+          {
             match.app_id = "^kitty$";
             blur = false;
           }
@@ -71,11 +74,16 @@
           "Mod+SPACE" = "spawn noctalia msg panel-toggle launcher";
           "Mod+B" = "spawn zen-beta";
           "Mod+E" = "spawn luciole";
+          "Mod+P" = "spawn noctalia msg panel-toggle wallpaper";
           "Mod+Tab" = "overview-toggle";
           "Alt+Tab" = "spawn noctalia msg window-switcher hold";
 
           "Mod+V" = "window-toggle-floating";
           "Mod+F" = "window-toggle-fullscreen";
+          "Mod+C" = "window-toggle-maximize-to-edges";
+
+          "Mod+N" = "workspace-set-layout toggle";
+          "Mod+S" = "workspace-set-layout toggle scrolling dwindle";
 
           "Mod+MouseMiddle" = "layout-scroll-drag";
           "Mod+MouseForward" = "workspace-previous";
@@ -92,7 +100,6 @@
 
           "Mod+Shift+Right" = "window-move-to-output-right";
           "Mod+Shift+Left" = "window-move-to-output-left";
-          "Mod+S" = "window-cycle-primary-extent";
 
           "Mod+Alt+Right" = "output-focus-right";
           "Mod+Alt+Left" = "output-focus-left";
@@ -162,7 +169,7 @@
         };
 
         layout.scrolling = {
-          center_focused = "on_overflow";
+          center_focused = "never";
         };
 
         colors.border = {
