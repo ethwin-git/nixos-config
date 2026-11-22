@@ -4,6 +4,9 @@
         enable = true;
         settings = {
           cursor.size = 24;
+          appearance = {
+            hide_logo = true;
+          };
           
           output = {
             refresh_rate = "DP-2:144; DP-1:165";
