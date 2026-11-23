@@ -1,8 +1,10 @@
 [bar.default]
+background_opacity = 0.71999998390674591
 center = [ "audio_visualizer", "control-center", "audio_visualizer" ]
 end = [ "clipboard", "tray", "volume", "clock", "notifications" ]
 margin_ends = 0
 radius = 0
+shadow = false
 start = [ "workspaces" ]
 
 [desktop_widgets]
@@ -148,6 +150,7 @@ time_format = "{:%I:%M %p}"
 builtin = "Noctalia"
 community_palette = "ADW"
 mode = "dark"
+pure_black_dark = true
 source = "wallpaper"
 wallpaper_scheme = "vibrant"
 
@@ -159,16 +162,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_train_crossing_a_bridge_over_a_bridge_with_mountains_in_the_background.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_train_crossing_a_bridge_over_a_bridge_with_mountains_in_the_background.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_train_crossing_a_bridge_over_a_bridge_with_mountains_in_the_background.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_train_crossing_a_bridge_over_a_bridge_with_mountains_in_the_background.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
 
 [weather]
 unit = "imperial"
