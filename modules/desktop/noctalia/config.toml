@@ -3,6 +3,7 @@ background_opacity = 0.71999998390674591
 center = [ "audio_visualizer", "control-center", "audio_visualizer" ]
 end = [ "clipboard", "tray", "volume", "clock", "notifications" ]
 margin_ends = 0
+panel_overlap = 0
 radius = 0
 shadow = false
 start = [ "workspaces" ]
@@ -162,16 +163,16 @@ directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_video_game_screen_of_a_video_game_01.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_video_game_screen_of_a_video_game_01.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_video_game_screen_of_a_video_game_01.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_street_with_buildings_and_signs.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_video_game_screen_of_a_video_game_01.jpg"
 
 [weather]
 unit = "imperial"
