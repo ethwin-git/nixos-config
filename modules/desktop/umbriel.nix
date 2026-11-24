@@ -17,6 +17,7 @@
     programs.umbriel = {
       enable = true;
       settings = {
+        include.optional.files = [ "~/.config/umbriel/noctalia.toml" ];
         general = {
           autostart = [ "noctalia" ];
           xwayland = true;
@@ -52,6 +53,10 @@
           {
             match.is_alone = true;
             default_maximize = true;
+          }
+          {
+            match.is_focused = true;
+            outer_border_width = 2;
           }
           {
             match.app_id = "^kitty$";
@@ -173,7 +178,8 @@
         };
 
         colors.border = {
-          focused = "#77E4F7";
+      #    focused = "#77E4F7";
+          outer = "#000000ff";
         };
         
         };
