@@ -16,7 +16,7 @@
           "type": "path"
         },
         {
-          "foreground": "#FCC256",
+          "foreground": "#F8F8F8",
           "style": "plain",
           "template": "{{ .HEAD }} ",
           "type": "git"
@@ -27,7 +27,7 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#FCC256",
+          "foreground": "#F8F8F8",
           "style": "plain",
           "template": "\n\udb80\udc54 ",
           "type": "text"
