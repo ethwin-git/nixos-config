@@ -18,5 +18,6 @@
       };
       passwordlessSyncUsers = [ "ethan" ];
     };
+    services.accounts-daemon.enable = true;
   };
 }
