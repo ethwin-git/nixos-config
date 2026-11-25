@@ -157,22 +157,23 @@ wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "luciole", "umbriel" ]
+    community_ids = [ "starship" ]
 
 [wallpaper]
 directory = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_cartoon_of_a_couple_of_tentacles.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/GZ-006.jpg"
 
     [wallpaper.last]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_cartoon_of_a_couple_of_tentacles.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/GZ-006.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_cartoon_of_a_couple_of_tentacles.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/GZ-006.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/a_cartoon_of_a_couple_of_tentacles.png"
+    path = "/home/ethan/nixos-config/modules/desktop/noctalia/wallpapers/GZ-006.jpg"
 
 [weather]
 unit = "imperial"
