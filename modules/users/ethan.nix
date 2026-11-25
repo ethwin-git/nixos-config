@@ -30,7 +30,7 @@ in
         hmModules.zsh
         hmModules.fastfetch
         hmModules.kitty
-        hmModules.ohmyposh
+        hmModules.starship
         hmModules.pwvucontrol
         hmModules.ssh
         hmModules.zen-browser
