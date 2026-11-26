@@ -36,7 +36,7 @@
           volumeBooster.enable = true;
           webKeybinds.enable = true;
           webScreenShareFixes.enable = true;
-          youtubeAdblock.enable = true;
+          betterYouTubeEmbeds.enable = true;
       };
 
       userPlugins = {
