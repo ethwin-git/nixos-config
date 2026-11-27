@@ -25,7 +25,6 @@ in
       nixos.noctalia-greeter
       nixos.umbriel
       nixos.nix-ld
-      nixos.gvfs
     ];
 
         networking.hostName = "Daisy";

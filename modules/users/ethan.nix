@@ -6,7 +6,10 @@ in
 
 {
   flake.modules.nixos.ethan = { pkgs, ... }: {
-    imports = [ nixos.steam ];
+    imports = [
+      nixos.steam
+      nixos.luciole
+    ];
     
     users.users.ethan = {
       isNormalUser = true;
@@ -39,7 +42,6 @@ in
         hmModules.prismlauncher
         hmModules.nixcord
         hmModules.elite-dangerous
-        hmModules.luciole
       ];
     };
   };
