@@ -1,7 +1,9 @@
 { inputs, ... }: {
 
-  flake.modules.homeManager.nixcord = {
+  flake.modules.homeManager.nixcord = { config, ... }: {
     imports = [ inputs.nixcord.homeModules.nixcord ];
+
+    home.file."${config.xdg.configHome}/equibop/settings.json".force = true;
 
     programs.nixcord = {
       enable = true;
